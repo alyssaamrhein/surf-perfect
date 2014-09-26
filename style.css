@@ -5,103 +5,76 @@
   -webkit-margin-after: 0;
 }
 
-.container {
-  background-color: rgba(0,0,0,.08);
-  max-width: 1300px;
-  height: 2104px;
-}
-
 .wrapper {
-
+  margin: 0 12.5% 0 10.5%;
 }
 
-.top-left-icons {
-  float: left;
-  margin-left: 8.5em;
-}
-
-.logo-text {
+nav.main li {
   display: inline-block;
-  font-family:'Open Sans';
-  font-weight: bold;
-  letter-spacing: -.0769em;
-  padding: 0em 0em 0em .5em;
-  position: absolute;
+  list-style-type: none;
+}
+
+.left-top {
+  float: left;
+  font-family: 'Open Sans';
   text-transform: uppercase;
-  top: 1.25em;
+  padding: 0;
+}
+
+.left-top li {
+
 }
 
 img.logo {
-  padding: .35em 0 0 0;
-}
-
-img.glass {
 
 }
 
-nav.right {
+.logo-text {
+  padding: 1em;
+}
+
+.right-top {
   float: right;
   font-family: 'Oswald';
-  margin-right: 10em;
+  font-size: 1.1em;
   text-transform: uppercase;
 }
 
-.right ul {
-  margin-top: 1em;
+.right-top li {
+  float: left;
+
 }
 
-.right ul li {
+li.search::after {
+  content: url("icons/search.png");
   display: inline-block;
-  font-size: 1.15em;
-  list-style-type: none;
-  padding-left: .5em;
 }
-li.search:after {
-   content: url("icons/search.png");
-}
-}
-header {
-  background-color: red;
-  height: 500px;
+
+.main-section {
+  background-color: black;
+  color: white;
+  clear: both;
+  float: left;
 }
 
 h1 {
-  color: white;
-  display: inline-block;
   font-family: 'Open Sans';
-  font-size: 6.5em;
-  letter-spacing: -.04em;
+  font-size: 6em;
+  padding: 2em 0em 2.1em .65em;
   text-transform: uppercase;
+}
+
+article {
+  width: 70%;
 }
 
 h2 {
   font-family: 'Oswald';
+  font-size: 4em;
   text-transform: uppercase;
-  font-size: 3.55em;
-  margin: 7% 0% 0 21%;
+  padding: .75em 0 0 0.45em;
 }
 
-h5 {
-  position: absolute;
-  top: 20.5em;
-  left: 32.75em;
-  letter-spacing: -.06em;
-  font-family: 'Open Sans';
-  font-size: .95em;
-}
-.main {
-  width: 100%;
-}
-.wordy {
-  float: left;
-  width: 60%;
-}
-
-.sidebar {
-  float: left;
-  width: 40%;
-}
-
-footer {
-  background-color:RGBA(8, 52, 82, 1);
+aside {
+  width: 30%;
 }
