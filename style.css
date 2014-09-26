@@ -75,6 +75,12 @@ article {
   width: 70%;
 }
 
+blockquote {
+  border-left: 3px solid rgb(247, 3, 3);
+  padding: 1em;
+  margin: .5em 0 1em 2em;
+}
+
 h2 {
   font-family: 'Oswald';
   font-size: 4em;
@@ -89,7 +95,7 @@ aside {
   width: 30%;
   background-color: white;
   color: black;
-  padding: 2em 0 2.65em 0;
+  padding: 2em 0 2.65em 1.5em;
 }
 
 .author-avatar {
@@ -102,7 +108,7 @@ aside {
 
 .author-social {
   background-color: white;
-  padding: 3.25em 0 1em 1.75em;
+  padding: 3.25em 0 1em .5em;
 }
 
 @media screen and (max-width: 40em){
@@ -124,10 +130,14 @@ p.author {
 .social {
   padding: 0;
   margin: 0 auto;
-  width: 66%;
+  width: 72%;
 }
 
 .social li {
   float: left;
   padding: .25em;
+}
+
+img.ad {
+  padding: 2.25em 1em 0 0;
 }
