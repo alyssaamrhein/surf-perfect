@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  list-style-type: none; }
+
+.wrapper {
+  margin: 0 12.5% 0 10.5%; }
+
+header {
+  background: url("http://placekitten.com/g/1300/550");
+  background-repeat: no-repeat;
+  width: 100%; }
+
+.main {
+  margin: 0 12.5% 0 10.5%; }
+
+.main li {
+  display: inline-block;
+  list-style-type: none; }
+
+.left-top {
+  float: left;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  padding: 0; }
+
+.logo-text {
+  padding: 1em; }
+
+.right-top {
+  float: right;
+  font-family: 'Oswald';
+  font-size: 1.1em;
+  text-transform: uppercase; }
+
+.right-top li {
+  float: left; }
+
+.search::after {
+  content: url("icons/search.png");
+  display: inline-block; }
+
+.main-section {
+  clear: both;
+  float: left; }
+
+.main-copy {
+  padding: 1em 3em 1em 2em; }
+
+h1 {
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 6em;
+  padding: 2em 0 2.1em 0.65em;
+  text-transform: uppercase; }
+
+article {
+  float: left;
+  width: 70%; }
+
+blockquote {
+  border-left: 3px solid #f70303;
+  padding: 1em;
+  margin: 0.5em 0 1em 2em; }
+
+.secondary {
+  font-family: 'Oswald';
+  font-size: 1em;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding: 1em 0 0 0.45em; }
+
+.buttons li {
+  display: inline-block;
+  padding: 0.5em 2em 0 0; }
+
+.comments:before {
+  background-color: blue;
+  content: url("icons/comments.png"); }
+
+.later:before {
+  content: url("icons/later.png"); }
+
+.share:before {
+  content: url("icons/share.png"); }
+
+.secondary {
+  font-family: 'Oswald';
+  font-size: 4em;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding: 1em 0 2em 0.45em;
+  text-align: center; }
+
+aside {
+  float: left;
+  width: 30%;
+  background-color: white;
+  color: black;
+  padding: 2em 0 2.65em 1.5em; }
+
+.author-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto; }
+
+.author-social {
+  background-color: white;
+  padding: 3.25em 0 1em 0.5em; }
+
+@media screen and (max-width: 40em) {
+  .wrapper {
+    margin: 0; }
+  article, aside {
+    width: 100%; } }
+
+.author {
+  text-align: center; }
+
+.social {
+  padding: 0;
+  margin: 0 auto;
+  width: 72%; }
+
+.social li {
+  float: left;
+  padding: 0.25em; }
+
+.ad {
+  padding: 2.25em 1em 0 0; }
+
+.bottom-row {
+  float: left;
+  background: blue;
+  width: 25%; }
+
+.bottom-row img {
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out; }
+
+.bottom-row img:hover {
+  opacity: 0.8; }
+
+footer {
+  background-color: RGB(8, 52, 82);
+  clear: both;
+  color: white;
+  font-family: 'Open Sans'; }
+
+.bottom-left {
+  display: inline; }
+
+.tiy:before {
+  content: url("icons/theironyard.png"); }
+
+.bottom-right {
+  float: right; }
+
+.bottom-right li {
+  float: left; }

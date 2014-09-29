@@ -18,7 +18,8 @@ header {
 .main {
   margin: 0 12.5% 0 10.5%;
 }
-nav.main li {
+
+.main li {
   display: inline-block;
   list-style-type: none;
 }
@@ -28,14 +29,6 @@ nav.main li {
   font-family: 'Open Sans';
   text-transform: uppercase;
   padding: 0;
-}
-
-.left-top li {
-
-}
-
-img.logo {
-
 }
 
 .logo-text {
@@ -87,16 +80,12 @@ blockquote {
   margin: .5em 0 1em 2em;
 }
 
-h2 {
+.secondary {
   font-family: 'Oswald';
-  font-size: 4em;
+  font-size: 1em;
   line-height: 100%;
   text-transform: uppercase;
   padding: 1em 0 0 0.45em;
-}
-
-ul.buttons {
-
 }
 
 .buttons li {
@@ -117,7 +106,7 @@ ul.buttons {
   content: url("icons/share.png");
 }
 
-.secondary h2 {
+.secondary {
   font-family: 'Oswald';
   font-size: 4em;
   line-height: 100%;
@@ -125,8 +114,8 @@ ul.buttons {
   padding: 1em 0 2em 0.45em;
   text-align: center;
 }
+
 aside {
-  display: inline-block;
   float: left;
   width: 30%;
   background-color: white;
@@ -159,7 +148,7 @@ aside {
 
 }
 
-p.author {
+.author {
   text-align: center;
 }
 
@@ -174,13 +163,11 @@ p.author {
   padding: .25em;
 }
 
-img.ad {
+.ad {
   padding: 2.25em 1em 0 0;
 }
 
-
 .bottom-row {
-  display:inline-block;
   float: left;
   background: blue;
   width: 25%;
@@ -196,7 +183,7 @@ img.ad {
 }
 
 footer {
-  background-color: RGBA(8, 52, 82, 1);
+  background-color: RGB(8, 52, 82);
   clear: both;
   color: white;
   font-family: 'Open Sans';
@@ -215,6 +202,5 @@ footer {
 }
 
 .bottom-right li {
-  display: inline;
   float: left;
 }
