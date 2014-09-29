@@ -9,6 +9,12 @@
 .wrapper {
   margin: 0 12.5% 0 10.5%;
 }
+
+header {
+  background: url("http://placekitten.com/g/1300/550");
+  background-repeat: no-repeat;
+  width:100%;
+}
 .main {
   margin: 0 12.5% 0 10.5%;
 }
@@ -63,6 +69,7 @@ img.logo {
 }
 
 h1 {
+  color: white;
   font-family: 'Open Sans';
   font-size: 6em;
   padding: 2em 0 2.1em .65em;
@@ -100,7 +107,6 @@ ul.buttons {
 .comments:before {
   background-color: blue;
   content: url("icons/comments.png");
-  padding: 1em;
 }
 
 .later:before {
@@ -190,7 +196,14 @@ img.ad {
 }
 
 footer {
+  background-color: RGBA(8, 52, 82, 1);
   clear: both;
+  color: white;
+  font-family: 'Open Sans';
+}
+
+.bottom-left {
+  display: inline;
 }
 
 .tiy:before {
