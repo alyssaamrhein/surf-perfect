@@ -1,38 +1,43 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
   list-style-type: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$text-blue:RGB(38, 120, 184);
+$accent-grey:RGB(174, 188, 199);
+$footer-color: RGB(8, 52, 82);
+$font1: 'Open Sans', Verdana, sans-serif;
+
+header {
+  background: url("http://placekitten.com/g/1300/550");
+  background-repeat: no-repeat;
+  color: white;
+  width:100%;
 }
 
 .wrapper {
   margin: 0 12.5% 0 10.5%;
 }
 
-header {
-  background: url("http://placekitten.com/g/1300/550");
-  background-repeat: no-repeat;
-  width:100%;
-}
-.main {
-  margin: 0 12.5% 0 10.5%;
-}
-
-.main li {
-  display: inline-block;
-  list-style-type: none;
-}
-
 .left-top {
-  float: left;
+  display: inline-block;
   font-family: 'Open Sans';
   text-transform: uppercase;
   padding: 0;
+  li {
+    display: inline-block;
+  }
+}
+
+img.logo {
+  position: relative;
+  top: .5em;
 }
 
 .logo-text {
-  padding: 1em;
+  position: relative;
+  top: -1em;
 }
 
 .right-top {
@@ -40,15 +45,15 @@ header {
   font-family: 'Oswald';
   font-size: 1.1em;
   text-transform: uppercase;
-}
-
-.right-top li {
-  float: left;
-
+  li {
+    display: inline-block;
+    position: relative;
+    top: 1em;
+  }
 }
 
 .search::after {
-  content: url("icons/search.png");
+  content: url("../icons/search.png");
   display: inline-block;
 }
 
@@ -58,7 +63,8 @@ header {
 }
 
 .main-copy {
-  padding: 1em 3em 1em 2em;
+  font-family: $font1;
+  padding: 1em 3em 1em 0;
 }
 
 h1 {
@@ -69,23 +75,25 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: 'Oswald',Verdana, sans-serif;
+  font-size: 4em;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
 article {
   float: left;
   width: 70%;
 }
 
 blockquote {
-  border-left: 3px solid rgb(247, 3, 3);
+  border-left: 3px solid $accent-grey;
+  color: $text-blue;
   padding: 1em;
-  margin: .5em 0 1em 2em;
-}
-
-.secondary {
-  font-family: 'Oswald';
-  font-size: 1em;
-  line-height: 100%;
+  margin: 0.5em 0 1em 0em;
+  font-family: $font1;
   text-transform: uppercase;
-  padding: 1em 0 0 0.45em;
 }
 
 .buttons li {
@@ -95,24 +103,20 @@ blockquote {
 
 .comments:before {
   background-color: blue;
-  content: url("icons/comments.png");
+  content: url("../icons/comments.png");
 }
 
 .later:before {
-  content: url("icons/later.png");
+  content: url("../icons/later.png");
 }
 
 .share:before {
-  content: url("icons/share.png");
+  content: url("../icons/share.png");
 }
 
-.secondary {
-  font-family: 'Oswald';
-  font-size: 4em;
-  line-height: 100%;
-  text-transform: uppercase;
-  padding: 1em 0 2em 0.45em;
+.secondary h2 {
   text-align: center;
+  padding: 1em;
 }
 
 aside {
@@ -121,6 +125,20 @@ aside {
   background-color: white;
   color: black;
   padding: 2em 0 2.65em 1.5em;
+}
+
+.tiny-author-avatar {
+  border-radius: 50px;
+  height: 30px;
+  margin: .5em .25em;
+}
+
+.tiny-author {
+  color: $text-blue;
+  display: inline-block;
+  font-family: $font1;
+  position: relative;
+  top: -1em;
 }
 
 .author-avatar {
@@ -136,6 +154,7 @@ aside {
   padding: 3.25em 0 1em .5em;
 }
 
+
 @media screen and (max-width: 40em){
 
   .wrapper{
@@ -148,11 +167,61 @@ aside {
 
 }
 
+.btn-all {
+  padding: 0 2.5em 2em 2em;
+}
+
+.btn-wrap {
+  display: inline-block;
+  height: 30px;
+  padding-right: .25em;
+}
+
+.btn-wrap:hover {
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon {
+  float: left;
+  background: url('https://raw.githubusercontent.com/alyssaamrhein/surf-perfect/master/icons/share.png') #333333 1% no-repeat;
+  height: 100%;
+  width: 35px;
+  margin: 0;
+  transition: all 1s ease;
+}
+
+.icon:hover {
+  background: blue;
+}
+
+.text {
+  float: left;
+  background: #999999;
+  height: 100%;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 30px;
+  padding: 2px 8px;
+  transition: background 1s ease;
+}
+
+.text:hover {
+  background: lightblue;
+}
+
 .author {
+  color: $text-blue;
   text-align: center;
+  font-family: $font1;
 }
 
 .social {
+  color: $accent-grey;
   padding: 0;
   margin: 0 auto;
   width: 72%;
@@ -183,7 +252,7 @@ aside {
 }
 
 footer {
-  background-color: RGB(8, 52, 82);
+  background-color: $footer-color;
   clear: both;
   color: white;
   font-family: 'Open Sans';
@@ -194,7 +263,7 @@ footer {
 }
 
 .tiy:before {
-  content: url("icons/theironyard.png")
+  content: url("../icons/theironyard.png")
 }
 
 .bottom-right {

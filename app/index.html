@@ -2,49 +2,57 @@
 <html>
   <head>
     <title>Surfin</title>
-    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css" media="screen" title="no title" charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
       <header>
-        <nav class="main">
-          <ul class="left-top">
-            <li><img class="logo" src="icons/logo.png" alt="Surf & Paddle Icons" /></li>
-            <li><p class="logo-text">Surf &amp; Paddle Co.  Blog</p></li>
-          </ul>
-          <ul class="right-top">
-            <li>About</li>
-            <li class="search">Search</li>
-          </ul>
-          <h1>Surf & Paddle Co.</h1>
-        </nav>
+          <nav class="wrapper">
+
+            <ul class="left-top">
+              <li><img src="icons/logo.png" class="logo" alt="Surf & Paddle Icons" /></li>
+              <li><p class="logo-text">Surf &amp; Paddle Co.  Blog</p></li>
+            </ul>
+
+            <ul class="right-top">
+              <li>About</li>
+              <li class="search">Search</li>
+            </ul>
+
+            <h1>Surf & Paddle Co.</h1>
+
+          </nav>
       </header>
-      <div class="wrapper">
+    <div class="wrapper">
       <section class="main-section">
         <article>
+
           <h2>A fantastic engaging headline goes here</h2>
-          <div class="icon-and-author">
-            <img src="put image here" alt="" /><p class="author">Author's Name</p>
+          <div class="tiny-author-avatar">
+            <img src="http://placehold.it/30x30" class="tiny-author-avatar">
+            <p class="tiny-author">Anne Marie</p>
           </div>
-          <p class="main-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Nam vestibulum ligula ut eros consectetur aliquet. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Sed mauris nibh, eleifend ut maximus ut, suscipit
-          sed augue. Ut non maximus lorem. Quisque elementum ut enim in
-          efficitur. Nunc eleifend massa non porta cursus. Maecenas
-          pellentesque fringilla magna in egestas. Quisque nec feugiat dui,
-          sed scelerisque dolor. Vestibulum tristique at metus
-          sed commodo. Aenean lobortis id lacus at consequat. Sed imperdiet
-          elementum convallis. Sed et nulla suscipit, feugiat odio eget,
-          cursus sem. Etiam sollicitudin nunc at eros elementum, tristique
-          dapibus sem molestie. Nulla eget urna tempor, dignissim turpis
-          sit amet, venenatis enim. Aliquam lacinia imperdiet turpis.
-          Aenean rutrum interdum odio, finibus vestibulum mi pulvinar ut.</p>
+          <p class="main-copy">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nam vestibulum ligula ut eros consectetur aliquet. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Sed mauris nibh, eleifend ut maximus ut, suscipit
+            sed augue. Ut non maximus lorem. Quisque elementum ut enim in
+            efficitur. Nunc eleifend massa non porta cursus. Maecenas
+            pellentesque fringilla magna in egestas. Quisque nec feugiat dui,
+            sed scelerisque dolor. Vestibulum tristique at metus
+            sed commodo. Aenean lobortis id lacus at consequat. Sed imperdiet
+            elementum convallis. Sed et nulla suscipit, feugiat odio eget,
+            cursus sem. Etiam sollicitudin nunc at eros elementum, tristique
+            dapibus sem molestie. Nulla eget urna tempor, dignissim turpis
+            sit amet, venenatis enim. Aliquam lacinia imperdiet turpis.
+            Aenean rutrum interdum odio, finibus vestibulum mi pulvinar ut.</p>
           <blockquote>
-	          <p> Beep beep </p>
+	          woah, that's radical
           </blockquote>
-          <p class="main-copy">Curabitur felis nisi, convallis fringilla nulla vel, euismod
+          <p class="main-copy">
+            Curabitur felis nisi, convallis fringilla nulla vel, euismod
             rhoncus eros. Nam nulla eros, bibendum eu condimentum id, ornare
             in arcu. Suspendisse mauris turpis, feugiat sed sapien et, posuere
            dignissim odio. Proin ac mattis velit, eu faucibus ante.
@@ -52,24 +60,35 @@
             maximus lorem non, rutrum massa. Interdum et malesuada fames
            ac ante ipsum primis in faucibus. Etiam tincidunt, felis ut
            fermentum ornare, eros quam pretium ex, vitae rutrum ligula
-           s sed nibh. </p>
+           s sed nibh.</p>
 
-           <p class="main-copy">Curabitur et purus pretium,
+           <p class="main-copy">
+            Curabitur et purus pretium,
             maximus lorem non, rutrum massa. Interdum et malesuada fames
            ac ante ipsum primis in faucibus. Etiam tincidunt, felis ut
            fermentum ornare, eros quam pretium ex, vitae rutrum ligula
            s sed nibh.</p>
 
-           <p class="main-copy">Curabitur felis nisi, convallis fringilla nulla vel, euismod
+           <p class="main-copy">
+             Curabitur felis nisi, convallis fringilla nulla vel, euismod
              rhoncus eros. Nam nulla eros, bibendum eu condimentum id, ornare
              in arcu. Suspendisse mauris turpis, feugiat sed sapien et, posuere
             dignissim odio. Proin ac mattis velit, eu faucibus ante.
             Pellentesque bibendum dictum egestas. </p>
-          <ul class="buttons">
-              <li class="comments">Read Comments</li>
-              <li class="later"> Read Later</li>
-              <li class="share"> Share This Post</li>
-          </ul>
+          <div class="btn-all">
+            <div class='btn-wrap group'>
+              <div class='icon'></div>
+              <div class='text'>Read Comments</div>
+            </div>
+            <div class='btn-wrap group'>
+              <div class='icon'></div>
+              <div class='text'>Read Later</div>
+            </div>
+            <div class='btn-wrap group'>
+              <div class='icon'></div>
+              <div class='text'>Share This Post</div>
+            </div>
+          </div>
        </article>
        <aside>
          <div class="author-social">
@@ -100,7 +119,7 @@
       <hr></hr>
     </div>
       <section class="secondary">
-          <h2>Most popular posts</h2>
+        <h2>most popular posts</h2>
           <div class="bottom-row">
             <p class="pic-text"></p>
             <img src="http://placekitten.com/g/350/350" alt="" />
@@ -124,7 +143,7 @@
           <li>Nav2 |</li>
           <li>Nav3 |</li>
           <li>Nav5</li>
-        </ul>
-      </footer>
+       </ul>
+    </footer>
   </body>
 </html>
