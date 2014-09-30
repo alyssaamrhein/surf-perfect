@@ -14,7 +14,7 @@ header {
 
 .left-top {
   display: inline-block;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Verdana, sans-serif;
   text-transform: uppercase;
   padding: 0; }
   .left-top li {
@@ -30,7 +30,7 @@ img.logo {
 
 .right-top {
   float: right;
-  font-family: 'Oswald';
+  font-family: 'Oswald', Verdana, sans-serif;
   font-size: 1.1em;
   text-transform: uppercase; }
   .right-top li {
@@ -52,7 +52,7 @@ img.logo {
 
 h1 {
   color: white;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Verdana, sans-serif;
   font-size: 6em;
   padding: 2em 0 2.1em 0.65em;
   text-transform: uppercase; }
@@ -165,9 +165,8 @@ aside {
   line-height: 27px;
   padding: 2px 10px 2px 6px;
   transition: background 1s ease; }
-
-.text:hover {
-  background: lightblue; }
+  .text:hover {
+    background: lightblue; }
 
 .author {
   color: RGB(38, 120, 184);
@@ -179,10 +178,9 @@ aside {
   padding: 0;
   margin: 0 auto;
   width: 72%; }
-
-.social li {
-  float: left;
-  padding: 0.25em; }
+  .social li {
+    float: left;
+    padding: 0.25em; }
 
 .ad {
   padding: 2.25em 1em 0 0; }
@@ -191,19 +189,17 @@ aside {
   float: left;
   background: blue;
   width: 25%; }
-
-.bottom-row img {
-  opacity: 0.5;
-  transition: opacity 0.4s ease-in-out; }
-
-.bottom-row img:hover {
-  opacity: 0.8; }
+  .bottom-row img {
+    opacity: 0.5;
+    transition: opacity 0.4s ease-in-out; }
+  .bottom-row:hover {
+    opacity: 0.8; }
 
 footer {
   background-color: RGB(8, 52, 82);
   clear: both;
   color: white;
-  font-family: 'Open Sans'; }
+  font-family: 'Open Sans', Verdana, sans-serif; }
 
 .bottom-left {
   display: inline; }
@@ -217,6 +213,5 @@ footer {
 
 .bottom-right {
   float: right; }
-
-.bottom-right li {
-  float: left; }
+  .bottom-right li {
+    float: left; }

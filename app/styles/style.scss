@@ -23,7 +23,7 @@ header {
 
 .left-top {
   display: inline-block;
-  font-family: 'Open Sans';
+  font-family: $font1;
   text-transform: uppercase;
   padding: 0;
   li {
@@ -43,7 +43,7 @@ img.logo {
 
 .right-top {
   float: right;
-  font-family: 'Oswald';
+  font-family: $font2;
   font-size: 1.1em;
   text-transform: uppercase;
   li {
@@ -70,14 +70,14 @@ img.logo {
 
 h1 {
   color: white;
-  font-family: 'Open Sans';
+  font-family: $font1;
   font-size: 6em;
   padding: 2em 0 2.1em .65em;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: 'Oswald',Verdana, sans-serif;
+  font-family: $font2;
   font-size: 4em;
   line-height: 100%;
   text-transform: uppercase;
@@ -108,9 +108,11 @@ blockquote {
   padding: .5em 2em 0 0;
 }
 
-.secondary h2 {
+.secondary {
+  h2 {
   text-align: center;
   padding: 1em;
+  }
 }
 
 aside {
@@ -207,10 +209,10 @@ aside {
   line-height: 27px;
   padding: 2px 10px 2px 6px;
   transition: background 1s ease;
-}
 
-.text:hover {
-  background: lightblue;
+  &:hover {
+    background: lightblue;
+  }
 }
 
 .author {
@@ -224,11 +226,10 @@ aside {
   padding: 0;
   margin: 0 auto;
   width: 72%;
-}
-
-.social li {
-  float: left;
-  padding: .25em;
+  li {
+    float: left;
+    padding: .25em;
+  }
 }
 
 .ad {
@@ -239,31 +240,29 @@ aside {
   float: left;
   background: blue;
   width: 25%;
-}
-
-.bottom-row img {
-  opacity: 0.5;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.bottom-row img:hover {
-  opacity: 0.8;
+  img {
+    opacity: 0.5;
+    transition: opacity 0.4s ease-in-out;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 footer {
   background-color: $footer-color;
   clear: both;
   color: white;
-  font-family: 'Open Sans';
+  font-family: $font1;
 }
 
 .bottom-left {
+  display: inline;
   li {
     float: left;
     position: relative;
     top: 1em;
   }
-  display: inline;
 }
 
 .tiy:before {
@@ -272,8 +271,7 @@ footer {
 
 .bottom-right {
   float: right;
-}
-
-.bottom-right li {
-  float: left;
+  li {
+    float: left;
+  }
 }
