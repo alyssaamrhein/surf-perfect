@@ -63,6 +63,11 @@ h2 {
   line-height: 100%;
   text-transform: uppercase; }
 
+h4 {
+  color: RGB(38, 120, 184);
+  font-family: 'Oswald', Verdana, sans-serif;
+  text-transform: uppercase; }
+
 article {
   float: left;
   width: 70%; }
@@ -78,16 +83,6 @@ blockquote {
 .buttons li {
   display: inline-block;
   padding: 0.5em 2em 0 0; }
-
-.comments:before {
-  background-color: blue;
-  content: url("../icons/comments.png"); }
-
-.later:before {
-  content: url("../icons/later.png"); }
-
-.share:before {
-  content: url("../icons/share.png"); }
 
 .secondary h2 {
   text-align: center;
@@ -143,24 +138,32 @@ aside {
   clear: both; }
 
 .icon {
+  background: RGB(38, 120, 184);
+  color: white;
   float: left;
-  background: url('https://raw.githubusercontent.com/alyssaamrhein/surf-perfect/master/icons/share.png') #333333 1% no-repeat;
   height: 100%;
   width: 35px;
   margin: 0;
   transition: all 1s ease; }
 
-.icon:hover {
-  background: blue; }
+.comments {
+  background: url('../icons/comments.png') #333333 1% no-repeat; }
+
+.later {
+  background: url('../icons/later.png') #333333 1% no-repeat; }
+
+.share {
+  background: url('../icons/share.png') #333333 1% no-repeat; }
 
 .text {
   float: left;
+  font-family: 'Open Sans', Verdana, sans-serif;
   background: #999999;
   height: 100%;
   color: #FFFFFF;
   margin: 0;
-  line-height: 30px;
-  padding: 2px 8px;
+  line-height: 27px;
+  padding: 2px 10px 2px 6px;
   transition: background 1s ease; }
 
 .text:hover {
@@ -204,6 +207,10 @@ footer {
 
 .bottom-left {
   display: inline; }
+  .bottom-left li {
+    float: left;
+    position: relative;
+    top: 1em; }
 
 .tiy:before {
   content: url("../icons/theironyard.png"); }
