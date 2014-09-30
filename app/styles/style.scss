@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@-ms-viewport{ width: device-width; }
+
+img {
+  max-width: 100%;
+}
+
 $text-blue:RGB(38, 120, 184);
 $accent-grey:RGB(174, 188, 199);
 $footer-color: RGB(8, 52, 82);
@@ -13,67 +19,70 @@ $font2: 'Oswald', Verdana, sans-serif;
 header {
   background: url("http://placekitten.com/g/1300/550");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
   width:100%;
+
+  .left-top {
+    display: inline-block;
+    font-family: $font1;
+    text-transform: uppercase;
+    padding: 0;
+    li {
+      display: inline-block;
+    }
+  }
+
+  .right-top {
+    float: right;
+    font-family: $font2;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    li {
+      display: inline-block;
+      position: relative;
+      top: 1em;
+    }
+  }
+
+  .search::after {
+    content: url("../icons/search.png");
+    display: inline-block;
+  }
+
+  img.logo {
+    position: relative;
+    top: .5em;
+  }
+
+  .logo-text {
+    position: relative;
+    top: -1em;
+  }
 }
 
-.wrapper {
+.container {
   margin: 0 12.5% 0 10.5%;
 }
 
-.left-top {
-  display: inline-block;
-  font-family: $font1;
-  text-transform: uppercase;
-  padding: 0;
-  li {
-    display: inline-block;
-  }
-}
-
-img.logo {
-  position: relative;
-  top: .5em;
-}
-
-.logo-text {
-  position: relative;
-  top: -1em;
-}
-
-.right-top {
-  float: right;
-  font-family: $font2;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  li {
-    display: inline-block;
-    position: relative;
-    top: 1em;
-  }
-}
-
-.search::after {
-  content: url("../icons/search.png");
-  display: inline-block;
-}
-
-.main-section {
-  clear: both;
-  float: left;
-}
-
-.main-copy {
-  font-family: $font1;
-  padding: 1em 3em 1em 0;
+.wrapper {
+  margin: 2% 11%;
 }
 
 h1 {
   color: white;
   font-family: $font1;
-  font-size: 6em;
-  padding: 2em 0 2.1em .65em;
+  font-size: 6vw;
+  padding: 6% 12%;
   text-transform: uppercase;
+}
+
+article {
+  float: left;
+  width: 70%;
 }
 
 h2 {
@@ -89,9 +98,14 @@ h4 {
   text-transform: uppercase;
 }
 
-article {
+.main-copy {
+  font-family: $font1;
+  padding: 1em 3em 1em 0;
+}
+
+.main-section {
+  clear: both;
   float: left;
-  width: 70%;
 }
 
 blockquote {
@@ -123,10 +137,8 @@ aside {
   padding: 2em 0 2.65em 1.5em;
 }
 
-.tiny-author-avatar {
-  border-radius: 50px;
-  height: 30px;
-  margin: .5em .25em;
+.tiny-author-wrap {
+  margin-top: .75em;
 }
 
 .tiny-author {
@@ -134,7 +146,11 @@ aside {
   display: inline-block;
   font-family: $font1;
   position: relative;
-  top: -1em;
+  top: -.5em;
+}
+
+.tiny-author-avatar {
+  border-radius: 50px;
 }
 
 .author-avatar {
@@ -147,20 +163,7 @@ aside {
 
 .author-social {
   background-color: white;
-  padding: 3.25em 0 1em .5em;
-}
-
-
-@media screen and (max-width: 40em){
-
-  .wrapper{
-    margin: 0;
-  }
-
-  article, aside {
-    width: 100%;
-  }
-
+  padding: 0 0 1em .5em;
 }
 
 .btn-all {
@@ -173,13 +176,14 @@ aside {
   padding-right: .25em;
 }
 
-.btn-wrap:hover {
-}
-
 .group:after {
   content: "";
   display: table;
   clear: both;
+}
+
+hr {
+  clear:both;
 }
 
 .icon {
@@ -193,11 +197,8 @@ aside {
 }
 
 .comments {background: url('../icons/comments.png') #333333 1% no-repeat;}
-
 .later {background: url('../icons/later.png') #333333 1% no-repeat;}
-
 .share {background: url('../icons/share.png') #333333 1% no-repeat;}
-
 
 .text {
   float: left;
@@ -236,6 +237,11 @@ aside {
   padding: 2.25em 1em 0 0;
 }
 
+.about-ad {
+  text-align: right;
+  padding-right: 6%;
+}
+
 .bottom-row {
   float: left;
   background: blue;
@@ -253,15 +259,15 @@ footer {
   background-color: $footer-color;
   clear: both;
   color: white;
+  display: block;
   font-family: $font1;
 }
 
 .bottom-left {
   display: inline;
   li {
-    float: left;
-    position: relative;
-    top: 1em;
+    display:inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -271,7 +277,121 @@ footer {
 
 .bottom-right {
   float: right;
+  position: relative;
+  top: 1em;
+  right: 2em;
   li {
     float: left;
   }
+}
+
+@media screen and (max-width: 40em){
+
+  .container {
+    margin: 0;
+  }
+
+
+  .left-top {
+    position: relative;
+    top:.25em;
+    left:1em;
+    li {
+      display: inline-block;
+    }
+   }
+
+  .right-top {
+    display: none;
+  }
+
+  h1 {
+    color: white;
+    font-family: $font1;
+    font-size: 6vw;
+    padding: 6% 20%;
+    text-transform: uppercase;
+   }
+
+  article {
+    width: 95%;
+  }
+
+  .main-copy {
+    font-family: $font1;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  .wrapper{
+    margin: 0 auto;
+    padding: 1em 2em;
+  }
+
+  .tiny-author-avatar {
+    margin:.25em;
+  }
+
+  .btn-all {
+    padding:0;
+  }
+
+  aside {
+    width: 95%;
+    padding: 0;
+  }
+
+  .author-social{
+    padding: 2.25em 0 1em 0;
+  }
+
+  .social {
+    padding: 0;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .ad {
+    margin: 0 10%;
+  }
+
+  .bottom-row {
+    float: left;
+    background: blue;
+    width: 100%;
+    img {
+      opacity: 0.5;
+      transition: opacity 0.4s ease-in-out;
+      width: 100%;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .bottom-left {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .75em;
+    padding: 0 0 0 5%;
+    li {
+      display:inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .bottom-right {
+      display: inline-block;
+      float: none;
+      position: relative;
+      top: 0;
+      left: 4em;
+
+    li {
+      display: inline-block;
+    }
+  }
+
 }
