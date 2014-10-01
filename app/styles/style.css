@@ -310,3 +310,10 @@ footer {
     left: 4em; }
     .bottom-right li {
       display: inline-block; } }
+
+@media screen and (min-width: 41em) and (max-width: 70em) {
+  h2 {
+    font-family: 'Oswald', Verdana, sans-serif;
+    font-size: 3em;
+    line-height: 100%;
+    text-transform: uppercase; } }

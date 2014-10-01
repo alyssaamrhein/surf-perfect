@@ -294,6 +294,7 @@ footer {
   }
 }
 
+
 @media screen and (max-width: 40em){
 
   .container {
@@ -308,7 +309,7 @@ footer {
     li {
       display: inline-block;
     }
-   }
+  }
 
   .right-top {
     display: none;
@@ -321,7 +322,7 @@ footer {
     font-size: 6vw;
     padding: 6% 20%;
     text-transform: uppercase;
-   }
+  }
 
   article {
     padding: 1em 2em 0 2em;
@@ -418,4 +419,13 @@ footer {
     }
   }
 
+}
+
+@media screen and (min-width: 41em) and (max-width: 70em) {
+  h2 {
+    font-family: 'Oswald', Verdana, sans-serif;
+    font-size: 3em;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
 }
